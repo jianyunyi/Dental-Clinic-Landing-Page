@@ -1,5 +1,5 @@
 {
-  "name": "dental-clinic-landing-page",
+  "name": "lumina-dental-studio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.4.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.17",
     "lucide-react": "^1.16.0",
