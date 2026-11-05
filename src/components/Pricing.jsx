@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect, useCallback, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from 'react/jsx-runtime';
 
-let a=({text:e,isHovered:t})=>_jsx("span",{style:{display:"inline-flex",alignItems:"center",justifyContent:"center",position:"relative",overflow:"hidden",height:"26px",lineHeight:"26px"},children:e.split("").map((e,a)=>{let n=" "===e;return _jsxs("span",{style:{display:"inline-block",position:"relative",overflow:"hidden",height:"26px",lineHeight:"26px",width:n?"0.34em":"auto"},children:[_jsx(motion.span,{style:{display:"inline-block",willChange:"transform"},animate:{y:t?"-100%":"0%"},transition:{duration:.28,delay:.015*a,ease:[.33,1,.68,1]},children:n?" ":e}),_jsx(motion.span,{style:{display:"inline-block",position:"absolute",left:0,top:0,willChange:"transform"},initial:{y:"100%"},animate:{y:t?"0%":"100%"},transition:{duration:.28,delay:.015*a,ease:[.33,1,.68,1]},children:n?" ":e})]},a)})}),n=()=>{let e=useRef(null),[n,o]=useState(()=>window.innerWidth/1600),[s,l]=useState(()=>window.innerWidth<860),[p,d]=useState(!1),[c,x]=useState(0),[m,h]=useState(null);useEffect(()=>{let e=()=>{let e=window.innerWidth;o(e/1600),l(e<860)};return e(),window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]),useEffect(()=>{let i=setTimeout(()=>{d(!0),x(e=>e+1)},60),t=new IntersectionObserver(([e])=>{e.isIntersecting&&(d(!0),x(e=>e+1))},{threshold:.1});return e.current&&t.observe(e.current),()=>{clearTimeout(i),t.disconnect()}},[]);let g=[{id:"basic-checkup",name:"Basic Checkup",price:"$49",period:"/visit",description:"Routine care to keep your teeth and gums healthy.",btnText:"Book Now",isDark:!1,btnWidth:"113px",features:["Full oral examination","Scaling and polishing","Digital X-ray","Personal care advice","1 Content Calendar"]},{id:"family-care",name:"Family Care",price:"$999",period:"/ Year",description:"Year-round care for up to 4 family members.",btnText:"Book Now",isDark:!1,btnWidth:"113px",features:["Fluoride care for kids","10–15% off all treatments","Digital X-rays","Scaling and polishing","2 checkups a year"]},{id:"smile-makeover",name:"Smile Makeover",price:"$1999",period:"/ package",description:"A brighter, more confident smile, start to finish.",btnText:"Book an Appointment",isDark:!0,btnWidth:"193px",features:["Personal care advice","Smile design consultation","Scaling and polishing","Professional teeth whitening","Follow-up visit included"]}];return _jsxs("section",{ref:e,id:"pricing",style:{width:"100%",height:s?"auto":`${1200*n}px`,overflow:"hidden",position:"relative",backgroundColor:"#F0FDFA",boxSizing:"border-box",order:7,flex:"none",flexGrow:0},children:[_jsx("style",{children:`
+let a=({text:e,isHovered:t})=>_jsx("span",{style:{display:"inline-flex",alignItems:"center",justifyContent:"center",position:"relative",overflow:"hidden",height:"26px",lineHeight:"26px"},children:e.split("").map((e,a)=>{let n=" "===e;return _jsxs("span",{style:{display:"inline-block",position:"relative",overflow:"hidden",height:"26px",lineHeight:"26px",width:n?"0.34em":"auto"},children:[_jsx(motion.span,{style:{display:"inline-block",willChange:"transform"},animate:{y:t?"-100%":"0%"},transition:{duration:.28,delay:.015*a,ease:[.33,1,.68,1]},children:n?" ":e}),_jsx(motion.span,{style:{display:"inline-block",position:"absolute",left:0,top:0,willChange:"transform"},initial:{y:"100%"},animate:{y:t?"0%":"100%"},transition:{duration:.28,delay:.015*a,ease:[.33,1,.68,1]},children:n?" ":e})]},a)})}),n=()=>{let e=useRef(null),[n,o]=useState(()=>window.innerWidth/1600),[s,l]=useState(()=>window.innerWidth<860),[p,d]=useState(!1),[c,x]=useState(0),[m,h]=useState(null);useEffect(()=>{let e=()=>{let e=window.innerWidth;o(e/1600),l(e<860)};return e(),window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]),useEffect(()=>{let i=setTimeout(()=>{d(!0),x(e=>e+1)},60),t=new IntersectionObserver(([e])=>{e.isIntersecting&&(d(!0),x(e=>e+1))},{threshold:.1});return e.current&&t.observe(e.current),()=>{clearTimeout(i),t.disconnect()}},[]);let g=[{id:"basic-checkup",name:"Basic Checkup",price:"$49",period:"/visit",description:"Routine care to keep your teeth and gums healthy.",btnText:"Book Now",isDark:!1,btnWidth:"113px",features:["Full oral examination","Scaling and polishing","Digital X-ray","Personal care advice","Annual preventative report"]},{id:"family-care",name:"Family Care",price:"$999",period:"/ Year",description:"Year-round care for up to 4 family members.",btnText:"Book Now",isDark:!1,btnWidth:"113px",features:["Fluoride care for kids","10–15% off all treatments","Digital X-rays","Scaling and polishing","2 checkups a year"]},{id:"smile-makeover",name:"Smile Makeover",price:"$1999",period:"/ package",description:"A brighter, more confident smile, start to finish.",btnText:"Book an Appointment",isDark:!0,btnWidth:"193px",features:["Personal care advice","Smile design consultation","Scaling and polishing","Professional teeth whitening","Follow-up visit included"]}];return _jsxs("section",{ref:e,id:"pricing",style:{width:"100%",height:s?"auto":`${1200*n}px`,overflow:"hidden",position:"relative",backgroundColor:"#F0FDFA",boxSizing:"border-box",order:7,flex:"none",flexGrow:0},children:[_jsx("style",{children:`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap');
 
         /* ================= DESKTOP STYLES (Fixed 1600px Canvas) ================= */
@@ -129,11 +129,13 @@ let a=({text:e,isHovered:t})=>_jsx("span",{style:{display:"inline-flex",alignIte
           position: absolute;
           left: 30px;
           top: 30px;
+          width: 480px;
+          max-width: 480px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           padding: 0px;
-          gap: 20px;
+          gap: 16px;
           box-sizing: border-box;
         }
 
@@ -214,9 +216,11 @@ let a=({text:e,isHovered:t})=>_jsx("span",{style:{display:"inline-flex",alignIte
           font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 15px;
+          line-height: 22px;
+          max-width: 460px;
           margin: 0;
+          word-break: break-word;
         }
 
         .pr-desc-light {
@@ -253,13 +257,15 @@ let a=({text:e,isHovered:t})=>_jsx("span",{style:{display:"inline-flex",alignIte
         /* Right Features Block (Frame 453) */
         .pr-right-block {
           position: absolute;
-          left: 621px;
+          left: 530px;
+          right: 30px;
+          width: 339px;
           top: 30px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           padding: 0px;
-          gap: 20px;
+          gap: 16px;
           box-sizing: border-box;
         }
 
@@ -293,18 +299,19 @@ let a=({text:e,isHovered:t})=>_jsx("span",{style:{display:"inline-flex",alignIte
         .pr-feature-item {
           display: flex;
           flex-direction: row;
-          align-items: center;
+          align-items: flex-start;
           padding: 0px;
           gap: 8px;
-          height: 24px;
+          min-height: 22px;
         }
 
         /* Rectangle 40 (Square Bullet) */
         .pr-bullet {
-          width: 8px;
-          height: 8px;
+          width: 7px;
+          height: 7px;
           border-radius: 2px;
           flex: none;
+          margin-top: 6px;
         }
 
         .pr-bullet-light {
@@ -319,9 +326,10 @@ let a=({text:e,isHovered:t})=>_jsx("span",{style:{display:"inline-flex",alignIte
           font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          white-space: nowrap;
+          font-size: 14px;
+          line-height: 20px;
+          white-space: normal;
+          word-break: break-word;
         }
 
         .pr-feature-text-light {

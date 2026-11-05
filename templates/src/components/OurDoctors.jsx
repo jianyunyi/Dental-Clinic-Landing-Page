@@ -11,15 +11,15 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
         /* Top Header Frame (Frame 2147226796) */
         .dd-header-box {
           position: absolute;
-          width: 451px;
-          height: 224px;
-          left: 575px;
-          top: 80px;
+          width: 900px;
+          height: auto;
+          left: calc(50% - 450px);
+          top: 70px;
           display: flex;
           flex-direction: column;
           align-items: center;
           padding: 0px;
-          gap: 20px;
+          gap: 16px;
           box-sizing: border-box;
           z-index: 5;
         }
@@ -59,17 +59,19 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
 
         /* Main Heading (Instrument Serif) */
         .dd-heading-text {
-          width: 451px;
+          width: 100%;
+          max-width: 900px;
           font-family: 'Instrument Serif', Georgia, serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 60px;
-          line-height: 80px;
+          font-size: 58px;
+          line-height: 72px;
           text-align: center;
           text-transform: uppercase;
           color: #0F766E;
           margin: 0;
           letter-spacing: -0.2px;
+          white-space: nowrap;
           will-change: transform, opacity;
         }
 
