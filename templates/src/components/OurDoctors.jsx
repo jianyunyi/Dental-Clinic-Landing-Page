@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect, useCallback, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from 'react/jsx-runtime';
 
-let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=useState(()=>window.innerWidth<860),[s,l]=useState(!1),[c,p]=useState(0);useEffect(()=>{let e=()=>{let e=window.innerWidth;a(e/1600),d(e<860)};return e(),window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]),useEffect(()=>{let i=setTimeout(()=>{l(!0),p(e=>e+1)},60),t=new IntersectionObserver(([e])=>{e.isIntersecting&&(l(!0),p(e=>e+1))},{threshold:.05});return e.current&&t.observe(e.current),()=>{clearTimeout(i),t.disconnect()}},[]);let m=[{name:"Dr. Elena Vance, DDS",role:"Director of Aesthetic Dentistry",bio:"Leads our clinic with 10+ years of experience in advanced and restorative dentistry. Specializes in braces and clear aligners for healthier smiles.",img:"https://cdn.jiro.build/Dentis/Image/d1.png"},{name:"Dr. Marcus Chen, DMD, MD",role:"Chief of Maxillofacial & Implants",bio:"Specializes in modern clear aligners, orthodontic realignment, and aesthetic smile symmetry with over 8 years of clinical expertise.",img:"https://cdn.jiro.build/Dentis/Image/d2.png"},{name:"Dr. Sophia Laurent, BDS",role:"Implant & Surgical Care",bio:"Board-certified oral surgeon specializing in dental implants, bone grafting, and gentle surgical restoration for complex cases.",img:"https://cdn.jiro.build/Dentis/Image/d3.png"},{name:"Dr. Julian Hayes, DDS",role:"Director of Clear Aligners",bio:"Dedicated pediatric dentist skilled in gentle behavioral care, preventive treatments, and creating joyful experiences for young smiles.",img:"https://cdn.jiro.build/Dentis/Image/d4.png"},{name:"Dr. Julian Thorne",role:"Cosmetic Dentist",bio:"Renowned cosmetic dental specialist focused on bespoke porcelain veneers, digital smile design, and advanced whitening therapies.",img:"https://cdn.jiro.build/Dentis/Image/d5.png"},{name:"Dr. Sophia Rossi",role:"Endodontics & Care",bio:"Endodontic expert specializing in microscopic root canal therapies, emergency tooth relief, and saving natural teeth with zero pain.",img:"https://cdn.jiro.build/Dentis/Image/d6.png"}];return _jsxs("section",{ref:e,id:"dentists",style:{width:"100%",height:n?"auto":`${1360*r}px`,overflow:"hidden",position:"relative",backgroundColor:"#F0FDFA",boxSizing:"border-box"},children:[_jsx("style",{children:`
+let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=useState(()=>window.innerWidth<860),[s,l]=useState(!1),[c,p]=useState(0);useEffect(()=>{let e=()=>{let e=window.innerWidth;a(e/1600),d(e<860)};return e(),window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]),useEffect(()=>{let i=setTimeout(()=>{l(!0),p(e=>e+1)},60),t=new IntersectionObserver(([e])=>{e.isIntersecting&&(l(!0),p(e=>e+1))},{threshold:.05});return e.current&&t.observe(e.current),()=>{clearTimeout(i),t.disconnect()}},[]);let m=[{name:"Dr. Elena Vance, DDS",role:"Director of Aesthetic Dentistry",bio:"Leads our clinic with 10+ years of experience in advanced and restorative dentistry. Specializes in braces and clear aligners for healthier smiles.",img:"https://cdn.jiro.build/Dentis/Image/d1.png"},{name:"Dr. Marcus Chen, DMD",role:"Chief of Maxillofacial & Implants",bio:"Specializes in modern clear aligners, orthodontic realignment, and aesthetic smile symmetry with over 8 years of clinical expertise.",img:"https://cdn.jiro.build/Dentis/Image/d2.png"},{name:"Dr. Sophia Laurent, BDS",role:"Implant & Surgical Care",bio:"Board-certified oral surgeon specializing in dental implants, bone grafting, and gentle surgical restoration for complex cases.",img:"https://cdn.jiro.build/Dentis/Image/d3.png"},{name:"Dr. Julian Hayes, DDS",role:"Director of Clear Aligners",bio:"Dedicated pediatric dentist skilled in gentle behavioral care, preventive treatments, and creating joyful experiences for young smiles.",img:"https://cdn.jiro.build/Dentis/Image/d4.png"},{name:"Dr. Julian Thorne",role:"Cosmetic Dentist",bio:"Renowned cosmetic dental specialist focused on bespoke porcelain veneers, digital smile design, and advanced whitening therapies.",img:"https://cdn.jiro.build/Dentis/Image/d5.png"},{name:"Dr. Sophia Rossi",role:"Endodontics & Care",bio:"Endodontic expert specializing in microscopic root canal therapies, emergency tooth relief, and saving natural teeth with zero pain.",img:"https://cdn.jiro.build/Dentis/Image/d6.png"}];return _jsxs("section",{ref:e,id:"dentists",style:{width:"100%",height:n?"auto":`${1360*r}px`,overflow:"hidden",position:"relative",backgroundColor:"#F0FDFA",boxSizing:"border-box"},children:[_jsx("style",{children:`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap');
 
         /* ================= DESKTOP STYLES (Fixed 1600px Canvas) ================= */
@@ -91,7 +91,7 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
         /* Fixed wrapper maintaining grid stability */
         .dd-card-wrapper {
           width: 420px;
-          height: 398px;
+          height: 406px;
           position: relative;
         }
 
@@ -143,7 +143,7 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
         .dd-card-drop-panel {
           width: 420px;
           background: #FFFFFF;
-          padding: 18px 24px 22px;
+          padding: 16px 22px 18px;
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
@@ -197,11 +197,12 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
         .dd-doctor-name {
           font-family: 'Inter Tight', sans-serif;
           font-style: normal;
-          font-weight: 500;
-          font-size: 24px;
-          line-height: 28px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
           color: #000000;
           margin: 0;
+          white-space: nowrap;
           transition: color 0.25s ease;
         }
 
@@ -213,10 +214,11 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
           font-family: 'Inter Tight', sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          color: #000000;
+          font-size: 15px;
+          line-height: 22px;
+          color: #4A5568;
           margin: 0;
+          white-space: nowrap;
         }
 
         .dd-book-btn {

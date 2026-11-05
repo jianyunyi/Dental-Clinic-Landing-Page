@@ -91,7 +91,7 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
         /* Fixed wrapper maintaining grid stability */
         .dd-card-wrapper {
           width: 420px;
-          height: 398px;
+          height: 406px;
           position: relative;
         }
 
@@ -143,7 +143,7 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
         .dd-card-drop-panel {
           width: 420px;
           background: #FFFFFF;
-          padding: 18px 24px 22px;
+          padding: 16px 22px 18px;
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
@@ -197,11 +197,12 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
         .dd-doctor-name {
           font-family: 'Inter Tight', sans-serif;
           font-style: normal;
-          font-weight: 500;
-          font-size: 24px;
-          line-height: 28px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
           color: #000000;
           margin: 0;
+          white-space: nowrap;
           transition: color 0.25s ease;
         }
 
@@ -213,10 +214,11 @@ let r=()=>{let e=useRef(null),[r,a]=useState(()=>window.innerWidth/1600),[n,d]=u
           font-family: 'Inter Tight', sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          color: #000000;
+          font-size: 15px;
+          line-height: 22px;
+          color: #4A5568;
           margin: 0;
+          white-space: nowrap;
         }
 
         .dd-book-btn {
